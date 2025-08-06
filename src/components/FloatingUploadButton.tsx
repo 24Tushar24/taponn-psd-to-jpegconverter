@@ -225,7 +225,7 @@ export default function FloatingUploadButton() {
         });
       }, 200);
 
-      const response = await fetch("http://0.0.0.0:8000/product/upload", {
+      const response = await fetch("https://your-railway-backend.up.railway.app/upload", {
         method: "POST",
         body: formData,
       });
