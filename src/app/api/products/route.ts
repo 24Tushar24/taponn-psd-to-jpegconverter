@@ -12,7 +12,7 @@ interface ProductData {
 // Function to fetch products from the FastAPI backend
 async function fetchProductsFromAPI(): Promise<ProductData[]> {
   try {
-    const response = await fetch("http://0.0.0.0:8000/products", {
+    const response = await fetch("https://your-railway-backend.up.railway.app/products", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
